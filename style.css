@@ -1,0 +1,22 @@
+h1{
+    font-size: 50px; color: white;
+}
+p{
+    font-weight: bold; color: white;
+}
+body{
+    margin-left: 5%; margin-right: 5%;
+}
+h2{
+    font-size: 35px;
+    color: white;
+}
+h3{
+    font-size: 35px; color: white;
+}
+.icon-1{
+    height: 50px;
+}
+.para2{
+    align-content: center;
+}
