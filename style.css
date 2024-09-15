@@ -20,3 +20,12 @@ h3{
 .para2{
     align-content: center;
 }
+h6{
+    height: 50px;
+}
+.insta-icon{
+    height: 45px;
+}
+.linkdin-icon{
+    height: 45px;
+}
