@@ -1,3 +1,13 @@
+body{
+    margin: 30px auto;
+    max-width: 1000px;
+}
+.table{
+    border: solid 2px;
+}
+
+
+
 h1{
     font-size: 50px; color: white;
 }
