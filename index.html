@@ -1,729 +1,877 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jee Mains & Advanced Short Notes</title>
-    <link rel="stylesheet" href="style.css">
-   
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEE Main & Advanced Short Notes | Free JEE Preparation Resources</title>
+  
+  <meta name="description" content="Free JEE Main and JEE Advanced short notes, chapter-wise revision resources, preparation strategies, PYQs, mock-test guidance and useful resources for JEE aspirants.">
+  <meta property="og:title" content="JEE Main & Advanced Short Notes | Free JEE Preparation Resources">
+  <meta property="og:description" content="Free short notes, roadmap, PYQ links, mock-test analysis and revision tracking for JEE aspirants.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ganeshgadupudi.github.io/JEE-Mains-short-notes/">
+  
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📘</text></svg>">
+  
+  <style>
+    :root {
+      --bg: #fff;
+      --soft: #f5f7fb;
+      --ink: #1b2437;
+      --mute: #5b6478;
+      --line: #e2e6ee;
+      --acc: #2450c8;
+      --accbg: #e9effc;
+      --ok: #1a7f4b;
+      --warn: #fff6e0;
+      --warnb: #e8c766;
+    }
 
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #12161f;
+        --soft: #1a2030;
+        --ink: #e8ecf5;
+        --mute: #a0a9bd;
+        --line: #2c3448;
+        --acc: #7c9dff;
+        --accbg: #222c4a;
+        --ok: #5fd394;
+        --warn: #2d2610;
+        --warnb: #7a6420;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 70px;
+    }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    a {
+      color: var(--acc);
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin: 0 0 .5em;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+    }
+
+    h3 {
+      font-size: 1.1rem;
+    }
+
+    .wrap {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 0 18px;
+    }
+
+    section {
+      padding: 44px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .lead {
+      color: var(--mute);
+      max-width: 65ch;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: var(--bg);
+      border-bottom: 1px solid var(--line);
+    }
+
+    nav .wrap {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      height: 56px;
+    }
+
+    nav b {
+      margin-right: auto;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 16px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul a {
+      text-decoration: none;
+      color: var(--ink);
+      font-size: .95rem;
+    }
+
+    .menu {
+      display: none;
+      background: none;
+      border: 1px solid var(--line);
+      color: var(--ink);
+      border-radius: 8px;
+      padding: 8px 12px;
+      font-size: 1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 11px 20px;
+      border-radius: 8px;
+      background: var(--acc);
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border: 0;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn.alt {
+      background: var(--accbg);
+      color: var(--acc);
+    }
+
+    html:not(.x) .btn {
+      color: #fff;
+    }
+
+    .btn.alt {
+      color: var(--acc) !important;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .btn:not(.alt) {
+        color: #12161f !important;
+      }
+    }
+
+    .grid {
+      display: grid;
+      gap: 14px;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 16px;
+      background: var(--bg);
+    }
+
+    .card:hover {
+      border-color: var(--acc);
+    }
+
+    .soft {
+      background: var(--soft);
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: .8rem;
+      padding: 2px 9px;
+      border-radius: 99px;
+      background: var(--accbg);
+      color: var(--acc);
+    }
+
+    .hero {
+      padding: 56px 0 44px;
+    }
+
+    .hero .btn {
+      margin: 6px 8px 6px 0;
+    }
+
+    .flow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 16px 0;
+    }
+
+    .flow span {
+      background: var(--accbg);
+      color: var(--acc);
+      padding: 6px 14px;
+      border-radius: 99px;
+      font-weight: 600;
+    }
+
+    .notice {
+      background: var(--warn);
+      border: 1px solid var(--warnb);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin: 16px 0;
+    }
+
+    input[type=search], select, textarea {
+      width: 100%;
+      padding: 11px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--bg);
+      color: var(--ink);
+      font: inherit;
+    }
+
+    .filters {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 14px 0;
+    }
+
+    .filters button {
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      background: var(--bg);
+      color: var(--ink);
+      border-radius: 99px;
+      cursor: pointer;
+    }
+
+    .filters .on {
+      background: var(--acc);
+      color: var(--bg);
+      border-color: var(--acc);
+    }
+
+    .bar {
+      height: 8px;
+      background: var(--line);
+      border-radius: 9px;
+      overflow: hidden;
+      margin: 8px 0;
+    }
+
+    .bar i {
+      display: block;
+      height: 100%;
+      background: var(--ok);
+      width: 0;
+      transition: width .3s;
+    }
+
+    details {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin: 8px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    ul.chk {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.chk li {
+      padding: 6px 0;
+    }
+
+    ul.chk input {
+      width: 20px;
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid var(--line);
+      padding: 8px;
+      text-align: left;
+      font-size: .95rem;
+    }
+
+    .scroll {
+      overflow-x: auto;
+    }
+
+    footer {
+      background: var(--soft);
+      padding: 32px 0;
+      border-top: 1px solid var(--line);
+      font-size: .92rem;
+    }
+
+    footer a {
+      margin-right: 12px;
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--acc);
+      outline-offset: 2px;
+    }
+
+    @media (max-width: 760px) {
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 56px;
+        left: 0;
+        right: 0;
+        background: var(--bg);
+        flex-direction: column;
+        padding: 12px 18px;
+        border-bottom: 1px solid var(--line);
+      }
+      nav ul.open {
+        display: flex;
+      }
+      .menu {
+        display: block;
+      }
+      nav .btn {
+        display: none;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      * {
+        transition: none !important;
+      }
+    }
+  </style>
 </head>
+<body>
 
-</body>
-<body class="webpage" style="background-color:white;">
-   <center><img  class="image-1"  src="https://alaracademy.com/blog/wp-content/uploads/2021/01/JEE-MAINS.jpeg" alt=""></center>
-    <h1 style="margin-left: 5%; margin-right: 5%; margin-top: 5%; color: black;">FOR JEE ASPIRANTS</h1>
-    <p style="font-size: x-large; margin-left: 5%; margin-right: 5%;">JEE Main Exam 2025:Best Handwritten Notes of Mathematics,Physics,Chemistry</p>
-    <p style="font-size: x-large; margin-left: 5%; margin-right: 5%;">PDF Notes;Topic wise Download PDF</p>
-    <br>
-    
-    <p style="font-size: 25px;margin-left: 5%; margin-right: 5%;">Joint Entrance Examination JEE Mathematics,Physics,Chemistry Handwritten Notes PDF For Revision
-        of JEE Main for Engineering Admissions in <span style="color: blue;">IITs,NITs,IIITs,</span>and<span style="color: blue;"> GFTIs</span> is Avaliable For Free to Download.Prepare Effectively
-        for Your JEE Main exam with the Short Notes Provided to You.
+<nav>
+  <div class="wrap">
+    <b>JEE Short Notes</b>
+    <ul id="nav">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#notes">Notes</a></li>
+      <li><a href="#roadmap">Roadmap</a></li>
+      <li><a href="#pyq">PYQs</a></li>
+      <li><a href="#tests">Tests</a></li>
+      <li><a href="#resources">Resources</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+    <a class="btn" href="#start">Start Preparing →</a>
+    <button class="menu" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  </div>
+</nav>
 
-    </p>
-    <p style="font-size: 25px;margin-left: 5%; margin-right: 5%;">And We Will Give You Complete Guidence To Acheive Your Goals.</p>
-    <h3 style="color: crimson; margin-left: 5%; margin-right: 5%;">Chemistry Chapterwise PDF</h3>
-    <center><table class="table" style="margin-left: 5%; margin-right: 5%; width:80%;">
-        <thead>
-          <tr>
-            <th scope="col">S.NO</th>
-            <th scope="col">Chapter Name</th>
-            <th scope="col">Weightage</th>
-            <th scope="col">PDF Download</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Solutions</td>
-            <td>1-2Question</td>
-            <td><a href="./Solutions.pdf">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Metallurgy</td>
-            <td>1 Question</td>
-            <td><a href="./Metallurgy.pdf">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Chemical Bonding</td>
-            <td>2-3 Question</td>
-            <td><a href="./Chemical bonding.pdf">Document</a></td>
-            <tr>
-                
-                <th scope="row">4</th>
-                <td>Stiochiometry</td>
-                <td>2-3 Question</td>
-                <td><a href="./Stiochiometry.pdf">Document</a></td>       
-            
-          </tr>
-          <tr>                
-            <th scope="row">5</th>
-            <td>Electrochemistry</td>
-            <td>1-2 Question</td>
-            <td><a href="./Electrochemistry (1).pdf">Document</a></td></tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Chemical Equlibrium</td>
-                <td>2-3 Question</td>
-                <td><a href="./Equilibrium.pdf">Document</a></td>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Quantitative Analysis</td>
-                    <td>1 Question</td>
-                    <td><a href="./Quantitative analysis.pdf">Document</a></td>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Environmental Chemistry</td>
-                        <td>1 Question</td>
-                        <td><a href="./Environmental chemistry short notes.pdf">Document</a></td>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Alkanes</td>
-                            <td>1 Question</td>
-                            <td><a href="./Alkanes.pdf">Document</a></td>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Alkynes</td>
-                                <td>1 Question</td>
-                                <td><a href="./Alkyne.pdf">Document</a></td>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Benzene</td>
-                                    <td>1 Question</td>
-                                    <td><a href="./Benzene (1).pdf">Document</a></td>
-                                    <tr>
-                                        <th scope="row">12</th>
-                                        <td>Nomenclature</td>
-                                        <td>1 Question</td>
-                                        <td><a href="./Nomenclature.pdf">Document</a></td>
-                                        <tr>
-                                            <th scope="row">13</th>
-                                            <td>Atomic Structre</td>
-                                            <td>1-2Question</td>
-                                            <td><a href="./Atomic structure.pdf">Document</a></td>
-                                            <tr>
-                                                <th scope="row">14</th>
-                                                <td>Qualitative inorganic analysis</td>
-                                                <td>1 Question</td>
-                                                <td><a href="./Qualitative inorganic analysis.pdf">Document</a></td>
-                                                <tr>
-                                                    <th scope="row">15</th>
-                                                    <td>Aromaticity</td>
-                                                    <td>1 Question</td>
-                                                    <td><a href="./Aromaticity.pdf">Document</a></td>
-                                                    <tr>
-                                                        <th scope="row">16</th>
-                                                        <td>Alkenes</td>
-                                                        <td>1 Question</td>
-                                                        <td><a href="./ALKENE.pdf">Document</a></td>
-                                                        <tr>
-                                                            <th scope="row">17</th>
-                                                            <td>Chemisty in Everyday Life</td>
-                                                            <td>1-2 Question</td>
-                                                            <td><a href="./Chemistry in every day life.pdf">Document</a></td>
-                                                            <tr>
-                                                                <th scope="row">18</th>
-                                                                <td>Oraganic Reagents</td>
-                                                                <td>1 Question</td>
-                                                                <td><a href="./Organic reagents.pdf">Document</a></td>
-                                                                <tr>
-                                                                    <th scope="row">19</th>
-                                                                    <td>d & f blocks</td>
-                                                                    <td>1-2Question</td>
-                                                                    <td><a href="./d&f block.pdf">Document</a></td>
-                                                                    <tr>
-                                                                        <th scope="row">20</th>
-                                                                        <td>Electronic Effects</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./Electromeric effects.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">21</th>
-                                                                        <td>Chemical Kinetics</td>
-                                                                        <td>1-2 Question</td>
-                                                                        <td><a href="./che. kinetics.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">22</th>
-                                                                        <td>Group 16</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./grp 16.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">23</th>
-                                                                        <td>Group 17</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./grp 17.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">24</th>
-                                                                        <td>Group 18</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./grp 18 (1).pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">25</th>
-                                                                        <td>Complex Compounds</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./Complex compounds.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">26</th>
-                                                                        <td>Group 15</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./group15 p-1_merged.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <tr>
-                                                                                <th scope="row">27</th>
-                                                                            <td>States Of Matter</td>
-                                                                            <td>1 Question</td>
-                                                                            <td><a href="./states of matter.pdf">Document</a></td>
-                                                                        </tr>
-                                                                        </tr>
-                                                                        </tr>
-                                                                        </tr>
-                                                                        </tr>
-                                                                        </tr>
-                                                                        </tr>
-                                                                    </tr>
-                                                                </tr>
-                                                            </tr>
-                                                        </tr>
-                                                    </tr>
-                                                </tr>
-                                            </tr>
-                                        </tr>
-                                    </tr>
-                                </tr>
-                            </tr>
-                        </tr>
-                    </tr>
-                </tr>
-            </tr>
-        </tbody>
-      </table>
-    </center>
-</tr>
-                                            </tr>
-                                        </tr> <h3 style="color: crimson; margin-left: 5%; margin-right: 5%;">Physics Chapterwise PDF</h3>
-    <center><table class="table" style="margin-left: 5%; margin-right: 5%; width:80%;">
-        <thead>
-          <tr>
-            <th scope="col">S.NO</th>
-            <th scope="col">Chapter Name</th>
-            <th scope="col">Weightage</th>
-            <th scope="col">PDF Download</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Modren Physics [Atoms,Nuclei and Semi Conductors]</td>
-            <td>3-4 Question</td>
-            <td><a href="">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>Current Electricity</td>
-            <td>2-3 Question</td>
-            <td><a href="./Current electricity.pdf">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>KTG </td>
-            <td>1-2 Question</td>
-            <td><a href="./ktg.pdf">Document</a></td>
-            <tr>
-                
-                <th scope="row">4</th>
-                <td>Optical instruments</td>
-                <td>1-2 Question</td>
-                <td><a href="./optical instruments.pdf">Document</a></td>       
-            
-          </tr>
-          <tr>                
-            <th scope="row">5</th>
-            <td>Electrostatics [Including Capacitors]</td>
-            <td>1-2 Question</td>
-            <td><a href="./Electrostatics.pdf">Document</a></td></tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Gravitation</td>
-                <td>1-2 Question</td>
-                <td><a href="./Gravity.pdf">Document</a></td>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Alternating Currents</td>
-                    <td>1-2 Question</td>
-                    <td><a href="./A.current.pdf">Document</a></td>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Simple Harmonic Motion[SHM]</td>
-                        <td>1-2 Question</td>
-                        <td><a href="./S.H.M.pdf">Document</a></td>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Wave Optics</td>
-                            <td>1 Question</td>
-                            <td><a href="./wave optics.pdf">Document</a></td>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Newtons Laws Of Motion [Includes Friction]</td>
-                                <td>2 Question</td>
-                                <td><a href="./NLM.pdf">Document</a></td>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Kinematics</td>
-                                    <td>1-2 Question</td>
-                                    <td><a href="./Kinematics.pdf">Document</a></td>
-                                    <tr>
-                                        <th scope="row">12</th>
-                                        <td>Electromagnetic Waves</td>
-                                        <td>1Question</td>
-                                        <td><a href="./Electromagnetic waves.pdf">Document</a></td>
-                                        <tr>
-                                            <th scope="row">13</th>
-                                            <td>Center Of Mass</td>
-                                            <td>0-1 Question</td>
-                                            <td><a href="./COM.pdf">Document</a></td>
-                                            <tr>
-                                                <th scope="row">14</th>
-                                                <td>Ray Optics</td>
-                                                <td>1-2 Question</td>
-                                                <td><a href="./Ray optics.pdf">Document</a></td>
-                                                <tr>
-                                                    <th scope="row">15</th>
-                                                    <td>Work Power &Energy</td>
-                                                    <td>1 Question</td>
-                                                    <td><a href="./W.P.E, Circular.pdf">Document</a></td>
-                                                    <tr>
-                                                        <th scope="row">16</th>
-                                                        <td>Electomagnetic Induction</td>
-                                                        <td>1 Question</td>
-                                                        <td><a href="./EMI.pdf">Document</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">17</th>
-                                                        <td>Units And Measurments</td>
-                                                        <td>1 Question</td>
-                                                        <td><a href="./Units.pdf">Document</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">18</th>
-                                                        <td>Calirometry</td>
-                                                        <td>0-1 Question</td>
-                                                        <td><a href="./calorimetry.pdf">Document</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">19</th>
-                                                        <td>Friction</td>
-                                                        <td>0-1Question</td>
-                                                        <td><a href="./Friction.pdf">Document</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">20</th>
-                                                        <td>Fluid Mechanics</td>
-                                                        <td>1-2 Question</td>
-                                                        <td><a href="./Fluid mechanics.pdf">Document</a></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row">21</th>
-                                                        <td>Dual Nature</td>
-                                                        <td>1 Question</td>
-                                                        <td><a href="./Dual nature.pdf">Document</a></td>
-                                                        <tr>
-                                                            <th scope="row">22</th>
-                                                            <td>Expansion Of Liquids</td>
-                                                            <td>0-1 Question</td>
-                                                            <td><a href="./exp.of liquids.pdf">Document</a></td>
-                                                            <tr>
-                                                                <th scope="row">23</th>
-                                                                <td>Expansion Of Gases</td>
-                                                                <td>0-1 Question</td>
-                                                                <td><a href="./exp. of gases.pdf">Document</a></td>
-                                                                <tr>
-                                                                    <th scope="row">24</th>
-                                                                    <td>Thermodynamics</td>
-                                                                    <td>0-1 Question</td>
-                                                                    <td><a href="./thermody..pdf">Document</a></td>
-                                                                    <tr>
-                                                                        <th scope="row">25</th>
-                                                                        <td>Heat Transfer</td>
-                                                                        <td>0-1 Question</td>
-                                                                        <td><a href="./heat transfer.pdf">Document</a></td>
-                                                                        <tr>
-                                                                            <th scope="row">26</th>
-                                                                            <td>Nuclear Physics</td>
-                                                                            <td>0-1 Question</td>
-                                                                            <td><a href="./Nuclear physics.pdf">Document</a></td>
-                                                                            <tr>
-                                                                                <th scope="row">27</th>
-                                                                                <td>Atomic Physics</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Atomic physics.pdf">Document</a></td>
-                                                                                <tr>
-                                                                                    <th scope="row">28</th>
-                                                                                <td>Rotational Motion</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Rotational motion.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th scope="row">29</th>
-                                                                                <td>Collisions</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Collisions.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th scope="row">30</th>
-                                                                                <td>Magnetism and Matter</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Magnetism and matter.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th scope="row">31</th>
-                                                                                <td>Ray Optics</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Ray optics.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                  
-                                                                                <tr>
-                                                                                    <th scope="row">32</th>
-                                                                                <td>Properties of Solids</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Properties of solids.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-                                                                                    <th scope="row">33</th>
-                                                                                <td>Vectors</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./Phy. vectors.pdf">Document</a></td>
-                                                                                </tr>
-                                                                                <tr>
-
-                                                                                </tr>
-                                                                            </tr>
-                                                                        </tr>
-                                                                    </tr>
-                                                                </tr>
-                                                            </tr>
-                                                        </tr>
-                                                    </tr>
-                                      
-                                    </tr>
-                                </tr>
-                            </tr>
-                        </tr>
-                    </tr>
-                </tr>
-            </tr>
-        </tbody>
-      </table>
-    </center>
-    <h3 style="color: crimson; margin-left: 5%; margin-right: 5%;">Mathematics Chapterwise PDF</h3>
-    <center><table class="table" style="margin-left: 5%; margin-right: 5%; width:80%;">
-        <thead>
-          <tr>
-            <th scope="col">S.NO</th>
-            <th scope="col">Chapter Name</th>
-            <th scope="col">Weightage</th>
-            <th scope="col">PDF Download</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Vectors</td>
-            <td>2-3 Question</td>
-            <td><a href="./vectors.pdf">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>3D Geometry</td>
-            <td>3 Question</td>
-            <td><a href="./3d geo.pdf">Document</a></td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Matrices & Determinants</td>
-            <td>3 Question</td>
-            <td><a href="./mat.pdf">Document</a></td>
-            <tr>
-                
-                <th scope="row">4</th>
-                <td>Conic Sections</td>
-                <td>2-3 Question</td>
-                <td><a href="./conics.pdf">Document</a></td>       
-            
-          </tr>
-          <tr>                
-            <th scope="row">5</th>
-            <td>Differntial Equations</td>
-            <td>3-4Question</td>
-            <td><a href="./d.eqn.pdf ">Document</a></td></tr>
-            <tr>
-                <th scope="row">6</th>
-                <td>Circles</td>
-                <td>1-2 Question</td>
-                <td><a href="./circles.pdf">Document</a></td>
-                <tr>
-                    <th scope="row">7</th>
-                    <td>Binomial Theorem</td>
-                    <td>1-2 Question</td>
-                    <td><a href="./binomial the..pdf">Document</a></td>
-                    <tr>
-                        <th scope="row">8</th>
-                        <td>Permutations & Combinations</td>
-                        <td>1Question</td>
-                        <td><a href="./P&C.pdf">Document</a></td>
-                        <tr>
-                            <th scope="row">9</th>
-                            <td>Probability</td>
-                            <td>1-2 Question</td>
-                            <td><a href="./probability.pdf">Document</a></td>
-                            <tr>
-                                <th scope="row">10</th>
-                                <td>Trignometry</td>
-                                <td>2-3 Question</td>
-                                <td><a href="./trigonometry.pdf">Document</a></td>
-                                <tr>
-                                    <th scope="row">11</th>
-                                    <td>Quadratic & Theory Of Equations</td>
-                                    <td>1 Question</td>
-                                    <td><a href="./the.of eqns.pdf">Document</a></td>
-                                    <tr>
-                                        <th scope="row">12</th>
-                                        <td>Complex Numbers</td>
-                                        <td>1 Question</td>
-                                        <td><a href="">Document</a></td>
-                                        <tr>
-                                            <th scope="row">13</th>
-                                            <td>Functions</td>
-                                            <td>2-3 Question</td>
-                                            <td><a href="./fun..pdf">Document</a></td>
-                                            <tr>
-                                                <th scope="row">14</th>
-                                                <td>Mathematical Reasoning</td>
-                                                <td>1 Question</td>
-                                                <td><a href="">Document</a></td>
-                                                <tr>
-                                                    <th scope="row">15</th>
-                                                    <td>Stastics</td>
-                                                    <td>1 Question</td>
-                                                    <td><a href="./stat..pdf">Document</a></td>
-                                                    <tr>
-                                                        <th scope="row">16</th>
-                                                        <td>Limits & Contunity</td>
-                                                        <td>1-2 Question</td>
-                                                        <td><a href="./lts.pdf">Document</a></td>
-                                                        <tr>
-                                                            <th scope="row">17</th>
-                                                            <td>Diffrentiability</td>
-                                                            <td>0-1 Question</td>
-                                                            <td><a href="./diff.pdf">Document</a></td>
-                                                            <tr>
-                                                                <th scope="row">18</th>
-                                                                <td>Sequence & Series</td>
-                                                                <td>1 Question</td>
-                                                                <td><a href="./seq.&series.pdf">Document</a></td>
-                                                                <tr>
-                                                                    <th scope="row">19</th>
-                                                                    <td>Applications Of Derivatives</td>
-                                                                    <td>1-2 Question</td>
-                                                                    <td><a href="">Document</a></td>
-                                                                    <tr>
-                                                                        <th scope="row">20</th>
-                                                                        <td>Sets & Relations</td>
-                                                                        <td>1 Question</td>
-                                                                        <td><a href="./sets and relation.pdf">Document</a></td>
-                                                                          <tr>
-                                                                            <th scope="row">21</th>
-                                                                            <td>Logarithm</td>
-                                                                            <td>0-1 Question</td>
-                                                                            <td><a href="./log.pdf">Document</a></td>
-                                                                            <tr>
-                                                                                <th scope="row">22</th>
-                                                                                <td>Diffrentiation</td>
-                                                                                <td>0-1 Question</td>
-                                                                                <td><a href="./diff.pdf">Document</a></td>
-                                                                                <tr>
-                                                                                    <th scope="row">23</th>
-                                                                                    <td>Straight Lines</td>
-                                                                                    <td>1-2 Question</td>
-                                                                                    <td><a href="./st.lines.pdf">Document</a></td>
-                                                                                    <tr>
-                                                                                        <th scope="row">24</th>
-                                                                                        <td>Pair Of Lines</td>
-                                                                                        <td>0-1 Question</td>
-                                                                                        <td><a href="./pair of st.lines.pdf">Document</a></td>
-                                                                                        <tr>
-                                                                                            <th scope="row">25</th>
-                                                                                            <td>Parabola</td>
-                                                                                            <td>0-1 Question</td>
-                                                                                            <td><a href="./Parabola.pdf">Document</a></td>
-                                                                                            <tr>
-                                                                                                <th scope="row">26</th>
-                                                                                                <td>Ellipse</td>
-                                                                                                <td>0-1 Question</td>
-                                                                                                <td><a href="./ellipse.pdf">Document</a></td>
-                                                                                                <tr>
-                                                                                                    <th scope="row">27</th>
-                                                                                                    <td>Hyperbola</td>
-                                                                                                    <td>0-1 Question</td>
-                                                                                                    <td><a href="./hyperbola.pdf">Document</a></td>
-                                                                                                    <tr>
-                                                                                                        <th scope="row">28</th>
-                                                                                                        <td>Lines & Planes</td>
-                                                                                                        <td>0-1 Question</td>
-                                                                                                        <td><a href="./lines and planes.pdf">Document</a></td>
-                                                                                                        <tr>
-                                                                                                            <th scope="row">29</th>
-                                                                                                            <td>2D Geometry</td>
-                                                                                                            <td>0-1 Question</td>
-                                                                                                            <td><a href="./2d geometry.pdf">Document</a></td>
-                                                                                                            <tr>
-                                                                                                                <th scope="row">30</th>
-                                                                                                                <td>Definite Integrals</td>
-                                                                                                                <td>0-1 Question</td>
-                                                                                                                <td><a href="./def9t int.pdf">Document</a></td>
-                                                                                                                <tr>
-                                                                                                                    <th scope="row">31</th>
-                                                                                                                    <td>Indefinite Integrals</td>
-                                                                                                                    <td>0-1 Question</td>
-                                                                                                                    <td><a href="./Indefinite integration.pdf">Document</a></td>
-                                                                                                                </tr>
-                                                                                                            </tr>
-                                                                                                        </tr>
-                                                                                                    </tr>
-                                                                                                </tr>
-                                                                                            </tr>
-                                                                                        </tr>
-                                                                                    </tr>
-                                                                                </tr>
-                                                                            </tr>
-                                                                        </tr>
-                                                                    </tr>
-                                                                </tr>
-                                                            </tr>
-                                                        </tr>
-                                                    </tr>
-                                                </tr>
-                                            </tr>
-                                        </tr>
-                                    </tr>
-                                </tr>
-                            </tr>
-                        </tr>
-                    </tr>
-                </tr>
-            </tr>
-        </tbody>
-      </table>
-    </center>
-   <h5 style="color: crimson; margin-left: 5%; font-size: 25px;">Mock Tests are avaliable Here</h5>
-   <center><a target="_blank" style="font-size: xx-large;" href="https://nta.ac.in/Quiz"><button class="mock-button">Click Here To Write Mock Test</button></a></center>
-    <h5 style="color: crimson; margin-left: 5%; font-size: 25px;">Some Youtube Channels Suggestions <img class="icon-1" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAilBMVEX/////AAD/wcH/lpb/0tL/zMz/lJT/9fX/8PD/kJD/xMT/3t7/4eH/srL/mJj/+fn/qKj/W1v/i4v/cHD/JSX/trb/z8//vLz/7Oz/2dn/o6P/n5//m5v/5ub/e3v/ODj/T0//Pj7/UFD/XFz/LCz/Zmb/hIT/GRn/fX3/RET/ra3/ERH/MDD/Y2PciEoRAAAEPElEQVR4nO2ciVaqUBSGuQgOCOIEzqamltp9/9e7cStzIGux/805tv7vAVp8q4I9Ow4hhBBCCCGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhMS1+ixsjjzfD9xBEkX79ngynbZalUq1kVGtVFqt6WQ8bu+jJBkEvp+OmuGsXotNP3k+9dALknarO+89Lh76hz9CDv2HRaf33Gi1k8AL6wbFhmlU7a3WUqHvWXfmlSgdlmuXNhb6Zpcst4NaSX7T8u0+WAxK8Gub88s4uMp+taVZwVc6qm/ckWm9/4R6gp5pt3dGWoKhabMjMx3B2LTXCTqGj6a1TthoCAamrc7wFQyfTEud8YIXdE07XYD/Ja5MK10A/0+smTa6Am04MC10RQo23JoWuqIFNlyaFrqiAzY07ZMDVtCekPQTbGHDtq9hBvaLODGtk0Mbajg3rZPDM9TQtogmYwU1FBd6FXiCGpq2yQUpWDctkwuy5N80LZNLE2jom5bJBflBTCTPoZaWJEDDseA5XMfpwqTOGAMNG4LnyBoNww5M64Qu0PBZ8BxvrZS0DxM7MgcabgTP8dEswjet/gINJUHbZztM8peQxwJo+CB4jpOG3wzbOkbWTCXV4LOWZgANcIGGkse4aNoiM007DZ24hxK01fA1yl1aZyjqHOaNFoACOdz0iSh5yh+eqCIMcdW2Id7QqUuiiHdwze6ZgqHjeC9SQ9xQhigBvjHiEwkNcTMZojGam0NMsrzKgxmK5mhuj2mJ8iqcYapn6Dh+8bwK10IUlWm+H7UrnFfhCjXKhk5cMK8KYIaiUZofjUsWy6vuybBYKeieDItFOHdkWCn2o3GGym+awpkG7l2q+j0UZIu476FiTFOTZPz3ELXJNhtwkbdWbuEKK2+49ppOfhjuZH62Z8AxYLwDV8VQqNNI+nVHcG1ueK0twIxUA7dnsIaw9gVOEGuIa0HZaYhsIwINJd+tM0NByeKaPtAQ1D8Et/OXQEPJq+HTED0rjhzdQ/Tx9zCzD5ArF5L4483QU9j6Rg6YSkrTmWFdZe+tCjS0cyYKOQZt51wbcnXdztlE5F6QnfOlyJ1uO2eEoUckTMvkghS00hAZlsrCNi2wy2s27sxsoYYGL7Z8CXbv6ffvrv3+/UMbX6ZYQVGWrwN2dc3GXW5k7pRh3z4++mzE77+pYN0W6SPc0LYvosJVM7vu0xzwgpbdGFI5vqeyf1aQnYagVbe+lK5+2hOcom/THLHl5p7iBUw7am4al8yOxObLGX2lk4JHJOVvBFNlv4x9CceDv6JS0rnosL0xEOEsGmqv0Hya7ni72ZVw9GS9MnAM+pR42PTdaFzdzjed3Vr+u3076D3vmj/ofYO4NpyFTS/1/eNN9sn1TfZJdpM9SgZu4Pue1UfZCSGEEEIIIYQQQgghhBBCCCGEEEIIIYQQQgghhBBCCCGl8g/A/VsMI7KqJAAAAABJRU5ErkJggg=="alt=""></h5>
-   <div style="margin-left: 5%; font-size: 22px; color: black;">
-    <br>
-    1.JEE Nexus by Unacademy <a target="_blank" href="https://www.youtube.com/@JEEnexus"><button class="first-channel">Channel Link</button></a>
-    <br>
-    2.For mathematics-Neha Agrawal Mathematically Inclined  <a target="_blank" href="https://www.youtube.com/@nehamamsarmy"><button class="second-channel">Channel Link</button></a>
-    <br>
-        3.For Physics-Physics Wallah <a target="_blank" href="https://www.youtube.com/@PhysicsWallah/videos"><button class="thrid-channel">Channel Link</button></a>
-        <br></b>
-    4.For Chemistry-Learnohub <a target="_blank" href="https://www.youtube.com/@LearnoHubClass1112"><button class="fourth-channel">Channel Link</button></a>
-    
-<h5 style="color: crimson;margin-left: 0; font-size: xx-large;">Some Suggestions And Recommended Books</h5>
-The Handwritten note reads a list of books that are supposed to be recommended for students who are enrollred in coaching institutions 
-<br>
-like <span style="color: blue;"> Sri Chaitanya,Allen,Narayana,FIITJEE,etc</span>.Here is the Summery.
-<br>
-<br>
-<h2 style="color: crimson;"> For Physics</h2>
-
-<div style="color: green;">1.700+ illustration:</div>
-For JEE Advanced:&nbsp;700+ illustartion by Physics'by Ashish Arora.
-<br>
-2.JEE PYQ's for Mains and Advanced
-<br>
-Publisheres recommended:Cengage,MTG.
-<br>
-<br>
-<h2 style="color: crimson;">For Chemistry</h2>
-<div style="color: green;">1.Level 1 & 2 problem-solving:</div>
-
-Focus random questions of organic chemistry by N.Awasthi by Sri Balaji.
-<br>
-<div style="color: green;">2.For Inorganic chemistry:</div>
-
-Practice questions from previous years in JEE Mains & Advanced.
-<br>
-<h3 style="color: crimson;">For Mathematics</h3>
-
-<div style="color: green;">1. Solve Cengage:</div>
-
-
-<br>
-<h4 style="color: crimson;">Important Points</h4>
-1.For all subjects you need to solve pyq for main and advanced.
-<br>
-2.It is highly recommended that to solve pyq for JEE.
-<br>
-3.In revision program your lectures will guide the py question bank to buy them from different publisher like MTG,Cengage,disha,arihant ,etc..
-So follow them.
-<br>
-4.In my point of view you can buy pyq from Cengage  because it have good no of questions with max no errors.
-<br>
-5.MTG have very very less no of errors than disha.
-<br>
-<br>
-<br>
-<li class="doubt">
-    If You Have Any Doubts Regarding Any Subject Questions You Can Scan The Question And Get The Detailed Explanation
-</li>
-<center><a target="_blank" href="https://www.toppr.com/ask/"><button class="doubt-button">Click Here</button></a></center>
-<br>
-<br>
-<br>
-<h2 style="color:red;">Physics Revision Check List </h2>
-<ul><p>1.Mechanics-LLM & Frictions+ System of Particles & Rigid body dynamics</p>
-
-    <p>2.Heat & Thermodynamics-First law(polytropic processes) + Heat Transfer</p>
-    
-    <p>3.Oscillations & Waves-SHM(ALL methods) + stationary waves</p>
-    <p>4.Electro magnetism-Capacitors + Current Electicity + EMI</p>
-    <P>5.Ray & Wave optics-Thin lenses + YDSE</P>
-    <P>6.Modern Physics-Atomic Structre + Dual nature of light + Nuclear Reactions</P></ul>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-
-
-    
-<p class="text">Thank You</p>
-<br>
-<br>
-<br>
-<br>
- <div class="contact-details">
-    <center>Contact Us</center>
-    <center>Ganesh Gadupudi</center>
-    <center>+91 9381020822</center>
-    <center>gadupudiganesh@gmail.com</center>
-    <center>Follow Me On</center>
-    <center> <a target="_blank" href="https://www.instagram.com/gadupudi_ganesh/?hl=en"><img class="insta-icon" src="data:image/jpeg;base64,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" alt=""></a>
-        <a target="_blank" href="https://x.com/GadupudiGanesh"><img class="twitter-icon" src="data:image/png;base64,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" alt=""></a>
-
-   <a target="_blank" href="https://www.linkedin.com/in/gadupudi-ganesh-sai-6a212631b/"> <img class="linkdin-icon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAllBMVEUMZMX///8AYcQAWcFDf8nL3PIAWrzQ3vMAYcI0eclZjtAucslAgsz6/v3x9/sgbclOhM8AX8QAYsAAX70AV70AWMLm7vgAXb4sdsw5fsoRbsVmltK6z+iUt+AMZcGDrN3c6fNvnddiltWqwuPA0+r0+vyOrt+lweR9pduuyueUst9Lh81pldd1mtYdbcunxOXO4u7Z4fGRyVlRAAAEKUlEQVR4nO3ce1faMBzG8SblEpSCiUUuQrkMhsCc+v7f3Ko4KjW/yLY0WXOez9mf4Ml3vSW1NYoAAAAAAAAAAAAAAAAAAAAAAAAAAADgYiriIsqU72FURcapGnXHk5aMue+xVCCT6n56x960Z2OpMt8jsozz+Xve0Xqc+h6SXbKzYOeSfex7UBap+J591lThHI3awPxw5KGcVFUj0RayaRrI6UaUj8GTpfA9NivknApkvTC2YdwjC9lc+h6dBWpFB7JFCIXx1FDIRr6HZ0Fq2EkZewjgXNMnLhVH34a+x/fPeMdYOK3/gchvTIFsXf/ZKR+bC+u/DcW1cS/d1f84jFobU+H3ANYXadNU2PU9PAvkd0Ngz/forMgMhU/1P5Xm4h0ZmHQCOAzz68WEPNdsg9iE+ZH4QATeBTApPYqf9PvoKIh99E2qOxQ3jVvf47JHDT5fMl5GAQW+3tNvnF/4N3shwrhJc8Ljw/Q0Q13MJ4GcRc8IORjP99vZfpWlQe2gH3EZx7Gs/4IJAADqQ3DJX/+FM38vqHyKlA5Hhx+Pj49X43468P34CheEiz9Z+pTMlrvFaQ6YbNrblRpKf6vNbHRNKX2yT/kwSVd5XluzGGs//Ew9NfIGS/RYs3X2yUGzp7dpnMYu+zPql1mbp46f+XxeSCkVxrpt8+bmWJgJOTPeYP7m5QkWi4Wye0d94t3m3sNmtFao5OyLvle7zPnRaKlQCb6+IDBfXvddJ1oq5BH5WE7JXd/xwWilUKnJpYGM9a7dPk5mpfCWP18cmO+okdOtaKVwYHxm5ZP1wOWNPBuFneUfBTK2dHkzyEbhwfirco3NxOF+aqPw8rPMbzuHV34bhX+h4e6q6KnQ4ZM6ngrZyNlG9FXo7hfMvgp7zt7o8FXIDq52U2+FznbTKgovmgAsalq4mB0mQqjJYfvler98o6sWhevuYPh2C5jz4WD1ReMPR4soi4W91dmtXy7MK469o7mpvcLn8nRaSWPi9PzH/++FCXvW3LuXpoXxi6MllK1tqHtGLBMd0zccLYNtFR60W8T0wkqv7yTQVuGTfpfLuvRXkms3sxo7hQlx/yy7NayOO3Uq3MXExY148PFY6OZyYafwihqsXNJfGteoMCGXQoYfzxo1KmxSO2kkJvTLcXUq3BreraFnp3UqNLwT3aJPpnUqPNBjTV+CKDScFVv0t+pUaLiytegXq1BoCQoLKNRDYfVQWEChHgqrh8ICCvVQWD0UFlCoh8LqobCAQj0UVg+FBRTqobB6KCygUA+F1UNhAYV6KKweCgso1ENh9VBYQKEeCquHwkKAhe1SIf2UoaFwSP+/dB29FtTvUsbnH+Q3VxTDmxOq+zffskqJiOtFpZda+OV/M6uQKepLof0NWAAAAAAAAAAAAAAAAAAAAAAAAAAAgAr8Aj5RWY0PDbn2AAAAAElFTkSuQmCC" alt=""></a></center>
-<center style="color: white; "> <img class="copy-right-img" src="data:image/png;base64,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" alt="">Copyright 2024-All rights reserved</center>
-</div>
-
-    <div>
-       
-       
+<header id="home" class="hero">
+  <div class="wrap">
+    <h1>JEE Preparation, Simplified.</h1>
+    <p class="lead">Free short notes, chapter-wise revision resources, PYQs, preparation strategies and useful resources for JEE Main & Advanced aspirants.</p>
+    <a class="btn" href="#notes">Explore Notes</a>
+    <a class="btn alt" href="#start">Start Preparation</a>
+    <p><small>Made by a student, for JEE aspirants.</small></p>
+    <div style="max-width:520px;margin-top:18px">
+      <input id="q" type="search" placeholder="Search chapters, notes, formulas, resources..." aria-label="Search">
+      <div id="qr" class="grid" style="margin-top:10px"></div>
     </div>
-</div></center>
-    </body>
+  </div>
+</header>
+
+<section id="why" class="soft">
+  <div class="wrap">
+    <h2>Why I Built This</h2>
+    <p class="lead">I created this website to make revision easier for students preparing for JEE. Useful resources were scattered across many sites, so I wanted one organized place with notes, a study path, practice guidance and revision tools. It is a personal project and still growing.</p>
+  </div>
+</section>
+
+<section id="start">
+  <div class="wrap">
+    <h2>Not Sure Where to Start?</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Step 1 — Know the Syllabus</h3>
+        <p>Understand what you actually need to study.</p>
+      </div>
+      <div class="card">
+        <h3>Step 2 — Learn the Concepts</h3>
+        <p>Use your classes, lectures and books to understand each chapter.</p>
+      </div>
+      <div class="card">
+        <h3>Step 3 — Practice</h3>
+        <p>Solve examples, exercises and PYQs.</p>
+      </div>
+      <div class="card">
+        <h3>Step 4 — Revise & Test</h3>
+        <p>Use short notes, revision checklists and mock tests.</p>
+      </div>
+    </div>
+    <p><a class="btn" href="#roadmap">Show Me the Preparation Roadmap</a></p>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Subjects</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Physics</h3>
+        <ul>
+          <li>Chapter-wise short notes</li>
+          <li>Important formulas</li>
+          <li>Revision checklist</li>
+          <li>PYQs and key concepts</li>
+        </ul>
+        <a href="#notes" onclick="setF('Physics')">Explore Physics →</a>
+      </div>
+      <div class="card">
+        <h3>Chemistry</h3>
+        <ul>
+          <li>Physical, Organic, Inorganic</li>
+          <li>Short notes</li>
+          <li>Reactions and formulas</li>
+          <li>PYQs</li>
+        </ul>
+        <a href="#notes" onclick="setF('Chemistry')">Explore Chemistry →</a>
+      </div>
+      <div class="card">
+        <h3>Mathematics</h3>
+        <ul>
+          <li>Chapter-wise short notes</li>
+          <li>Important formulas and concepts</li>
+          <li>PYQs</li>
+          <li>Revision checklist</li>
+        </ul>
+        <a href="#notes" onclick="setF('Mathematics')">Explore Mathematics →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="notes">
+  <div class="wrap">
+    <h2>Chapter-wise Notes & My Revision Tracker</h2>
+    <p class="lead">Handwritten short notes (PDF). Chapters marked “coming soon” have no file yet. Set a status on each chapter to track your progress.</p>
+    <div class="filters" id="filters"></div>
+    <div class="bar" aria-hidden="true"><i id="pbar"></i></div>
+    <p id="ptxt"><small></small></p>
+    <div class="grid" id="chapters"></div>
+  </div>
+</section>
+
+<section id="roadmap" class="soft">
+  <div class="wrap">
+    <h2>JEE Preparation Roadmap</h2>
+    <div class="flow">
+      <span>Learn</span>
+      <span>Practice</span>
+      <span>PYQ</span>
+      <span>Test</span>
+      <span>Analyze</span>
+      <span>Revise</span>
+    </div>
+    <details open>
+      <summary>Class 11</summary>
+      <ul>
+        <li>Build fundamentals and complete concepts systematically</li>
+        <li>Start solving basic problems</li>
+        <li>Maintain short notes</li>
+        <li>Begin PYQs gradually</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Class 12</summary>
+      <ul>
+        <li>Complete the remaining syllabus</li>
+        <li>Strengthen Class 11 concepts</li>
+        <li>Increase problem-solving</li>
+        <li>Start regular mock tests and analyze mistakes</li>
+      </ul>
+    </details>
+    <details>
+      <summary>Final Revision</summary>
+      <ul>
+        <li>Formula revision and short notes</li>
+        <li>PYQs and mock tests</li>
+        <li>Error analysis and time management</li>
+      </ul>
+    </details>
+
+    <h2 style="margin-top:32px">Your Daily JEE Routine</h2>
+    <div class="grid">
+      <div class="card"><h3>Learn</h3>Study one concept or topic.</div>
+      <div class="card"><h3>Practice</h3>Solve questions on that topic.</div>
+      <div class="card"><h3>PYQs</h3>Solve previous-year questions.</div>
+      <div class="card"><h3>Review</h3>Check your mistakes.</div>
+      <div class="card"><h3>Revise</h3>Spend a short time on older topics.</div>
+    </div>
+    <p>Adjust this to your school or coaching timetable. A routine you can keep is better than a perfect one you can’t.</p>
+  </div>
+</section>
+
+<section id="pyq">
+  <div class="wrap">
+    <h2>Previous Year Questions</h2>
+    <p class="lead">PYQs show you how questions are actually framed and what depth is expected. Solve them by chapter after learning it, then by full paper closer to the exam. Organize your practice by subject, chapter, year and JEE Main / Advanced.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>JEE Main papers</h3>
+        <p>Official question papers from NTA.</p>
+        <a href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener">jeemain.nta.nic.in →</a>
+      </div>
+      <div class="card">
+        <h3>JEE Advanced papers</h3>
+        <p>Official site of the organizing IIT.</p>
+        <a href="https://jeeadv.ac.in/" target="_blank" rel="noopener">jeeadv.ac.in →</a>
+      </div>
+    </div>
+    <p><small>I don’t host PYQ files here yet, so I only link to official sources.</small></p>
+  </div>
+</section>
+
+<section id="tests" class="soft">
+  <div class="wrap">
+    <h2>Mock Tests & Error Analysis</h2>
+    <ol>
+      <li>Take a timed test.</li>
+      <li>Don’t look at solutions immediately.</li>
+      <li>Calculate your score.</li>
+      <li>Identify incorrect questions.</li>
+      <li>Identify questions where you wasted time.</li>
+      <li>Identify concepts that need revision.</li>
+      <li>Reattempt the difficult questions.</li>
+    </ol>
+    <h3>Error Analysis Template</h3>
+    <div class="scroll">
+      <table>
+        <tr>
+          <th>Q. no.</th>
+          <th>Subject / chapter</th>
+          <th>Mistake type</th>
+          <th>What I’ll do next time</th>
+        </tr>
+        <tr>
+          <td colspan="4">Tag every wrong question as: Concept mistake · Calculation mistake · Silly mistake · Question misunderstood · Time management issue · Guessing mistake</td>
+        </tr>
+      </table>
+    </div>
+    <p>Taking tests is not enough — analysing them is where the improvement happens.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>How to Revise JEE</h2>
+    <div class="flow">
+      <span>First revision: after a few days</span>
+      <span>Second: after a few weeks</span>
+      <span>Final: before the exam</span>
+    </div>
+    <p>Use short notes, formula lists, questions you marked and your error log. These gaps are a guide, not a universal rule — adjust to your own memory and time.</p>
+    <h3>What Should I Revise First?</h3>
+    <ul>
+      <li>Your weak chapters</li>
+      <li>Topics you often get wrong in PYQs</li>
+      <li>Chapters you studied but forgot</li>
+      <li>Mistakes from mock tests</li>
+      <li>Chapters you haven’t finished</li>
+    </ul>
+    <p><small>I don’t show chapter weightage as a guarantee; past patterns don’t fix future papers.</small></p>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Formula & Concept Revision</h2>
+    <p class="lead">Structure is ready; content will be added chapter by chapter.</p>
+    <div class="grid">
+      <div class="card"><h3>Physics</h3>Mechanics, Thermodynamics, Waves, Electrostatics, Current Electricity, Magnetism, Optics, Modern Physics</div>
+      <div class="card"><h3>Chemistry</h3>Physical formulas, Organic reactions, Inorganic facts and reactions</div>
+      <div class="card"><h3>Mathematics</h3>Algebra, Coordinate Geometry, Calculus, Vectors & 3D, Probability & Statistics</div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>Choose Your Situation</h2>
+    <details>
+      <summary>I am starting JEE preparation</summary>
+      <p>Learn the syllabus, pick one main book per subject, build concepts before speed, and make short notes from day one.</p>
+    </details>
+    <details>
+      <summary>My syllabus is incomplete</summary>
+      <p>List pending chapters, finish them in order of difficulty for you, and keep a small daily slot for revision so finished chapters don’t fade.</p>
+    </details>
+    <details>
+      <summary>I have completed the syllabus</summary>
+      <p>Alternate revision, PYQs and timed tests. Use your error log to decide what to revise.</p>
+    </details>
+    <details>
+      <summary>My exam is very close</summary>
+      <p>Stop starting new resources. Revise short notes and formulas, take timed tests, analyse errors, and protect your sleep.</p>
+    </details>
+    <details>
+      <summary>I am preparing for JEE Advanced</summary>
+      <p>It demands deeper concepts and higher-level problem solving. Spend more time on multi-concept problems and understanding why a method works.</p>
+    </details>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>Common JEE Preparation Mistakes</h2>
+    <ul>
+      <li>Collecting too many resources</li>
+      <li>Watching lectures without solving questions</li>
+      <li>Ignoring PYQs</li>
+      <li>Not revising</li>
+      <li>Taking mock tests without analysing them</li>
+      <li>Ignoring weak chapters</li>
+      <li>Constantly changing books or teachers</li>
+      <li>Comparing your preparation with others</li>
+      <li>Studying without a realistic plan</li>
+      <li>Neglecting sleep and health</li>
+    </ul>
+  </div>
+</section>
+
+<section id="resources">
+  <div class="wrap">
+    <h2>Useful Resources</h2>
+    <div class="notice">
+      <b>Official information:</b> Exam patterns, dates, syllabus and instructions can change. Always verify important information from the official NTA/JEE Main website.
+    </div>
+    <div class="grid">
+      <div class="card">
+        <h3>Official</h3>
+        <ul>
+          <li><a href="https://jeemain.nta.nic.in/" target="_blank" rel="noopener">JEE Main (NTA) – syllabus, bulletin, notices, papers</a></li>
+          <li><a href="https://jeeadv.ac.in/" target="_blank" rel="noopener">JEE Advanced</a></li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Books by purpose</h3>
+        <ul>
+          <li>Concept building: your class textbook / NCERT</li>
+          <li>Problem solving: one standard problem book per subject</li>
+          <li>PYQs: official papers</li>
+          <li>Revision: short notes and your error log</li>
+        </ul>
+        <small>Pick one resource per purpose; more isn’t better.</small>
+      </div>
+    </div>
+    <p><small>Advice on this page is personal study strategy, not official information.</small></p>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>JEE Preparation Checklist</h2>
+    <ul class="chk" id="chk"></ul>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2>One Bad Test Doesn’t Define Your Preparation</h2>
+    <ul>
+      <li>Mistakes are feedback.</li>
+      <li>Focus on improvement, not comparison.</li>
+      <li>Consistency beats random long hours.</li>
+      <li>Understand each mistake, then keep moving.</li>
+    </ul>
+  </div>
+</section>
+
+<section class="soft">
+  <div class="wrap">
+    <h2>FAQ</h2>
+    <details>
+      <summary>What is JEE Main / Advanced?</summary>
+      <p>JEE Main is the national exam for NITs, IIITs and other institutes and is also the qualifier for JEE Advanced, which is for IIT admissions. Check official sites for current rules.</p>
+    </details>
+    <details>
+      <summary>When should I start?</summary>
+      <p>Whenever you can build fundamentals steadily; many begin in Class 11.</p>
+    </details>
+    <details>
+      <summary>Are short notes enough?</summary>
+      <p>No. They are for revision; you still need concepts and practice.</p>
+    </details>
+    <details>
+      <summary>How important are PYQs?</summary>
+      <p>Very useful for understanding question style, but not the only practice.</p>
+    </details>
+    <details>
+      <summary>How should I use mock tests, revise, or prepare for Advanced?</summary>
+      <p>See the Tests, Revision and Situation sections above.</p>
+    </details>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <h2>About the Creator</h2>
+    <p class="lead">I’m Ganesh Gadupudi. I created this website as a personal project to organize JEE preparation resources and help students. Built with the intention of helping students revise smarter.</p>
+    <h3>Found something useful or noticed an issue?</h3>
+    <p>Broken PDF, incorrect information, resource or feature suggestion, or general feedback: <a href="https://github.com/ganeshgadupudi/JEE-Mains-short-notes/issues" target="_blank" rel="noopener">open an issue on GitHub</a>.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <b>JEE Main & Advanced Short Notes</b><br>
+    Free student-focused revision resources.
+    <p>
+      <a href="#home">Home</a>
+      <a href="#notes">Notes</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#pyq">PYQs</a>
+      <a href="#tests">Mock Tests</a>
+      <a href="#resources">Resources</a>
+      <a href="#about">About</a>
+    </p>
+    <p><b>Important:</b> This is an independent student-created website and is not affiliated with NTA, IITs, or any coaching organization.</p>
+  </div>
+</footer>
+
+<script>
+  const B = 'https://ganeshgadupudi.github.io/JEE-Mains-short-notes/';
+  
+  const CH = [
+    ['Chemistry', 'Solutions', 'Class 12', '1-2 questions (approx., author note)', B + 'Solutions.pdf'],
+    ['Chemistry', 'Metallurgy', 'Class 12', '1 question (approx., author note)', B + 'Metallurgy.pdf'],
+    ['Chemistry', 'Chemical Bonding', 'Class 11', '2-3 questions (approx., author note)', B + 'Chemical%20bonding.pdf'],
+    ['Physics', 'Current Electricity', 'Class 12'],
+    ['Physics', 'Electrostatics', 'Class 12'],
+    ['Physics', 'Thermodynamics', 'Class 11'],
+    ['Physics', 'Optics', 'Class 12'],
+    ['Mathematics', 'Calculus', 'Class 12'],
+    ['Mathematics', 'Coordinate Geometry', 'Class 11'],
+    ['Mathematics', 'Vectors & 3D', 'Class 12']
+  ];
+
+  const ST = ['Not Started', 'Learning', 'Practicing', 'Revised', 'Strong'];
+
+  const get = k => {
+    try { return JSON.parse(localStorage.getItem(k)); } catch(e) { return null; }
+  };
+
+  const put = (k, v) => {
+    try { localStorage.setItem(k, JSON.stringify(v)); } catch(e) {}
+  };
+
+  let prog = get('prog') || {}, filter = 'All';
+
+  function setF(f) {
+    filter = f;
+    draw();
+  }
+
+  function draw() {
+    document.getElementById('filters').innerHTML = ['All', 'Physics', 'Chemistry', 'Mathematics'].map(function(f) {
+      return '<button class="' + (f == filter ? 'on' : '') + '" onclick="setF(\'' + f + '\')">' + f + '</button>';
+    }).join('');
+    
+    document.getElementById('chapters').innerHTML = CH.filter(function(c) {
+      return filter == 'All' || c[0] == filter;
+    }).map(function(c) {
+      var pdfLink = c[4] ? '<a href="' + c[4] + '" target="_blank" rel="noopener">Open PDF</a>' : '<small>PDF coming soon</small>';
+      var weightage = c[3] ? '<small>Weightage: ' + c[3] + '</small><br>' : '';
+      
+      var options = ST.map(function(s) {
+        var isSelected = (prog[c[1]] == s || (!prog[c[1]] && s == ST[0])) ? 'selected' : '';
+        return '<option ' + isSelected + '>' + s + '</option>';
+      }).join('');
+
+      return '<div class="card">' +
+        '<span class="tag">' + c[0] + ' · ' + c[2] + '</span>' +
+        '<h3 style="margin-top:8px">' + c[1] + '</h3>' +
+        weightage + pdfLink +
+        '<select aria-label="Status for ' + c[1] + '" onchange="prog[\'' + c[1] + '\']=this.value;put(\'prog\',prog);draw()" style="margin-top:8px">' + options + '</select>' +
+        '</div>';
+    }).join('');
+
+    var done = CH.filter(function(c) {
+      return ['Revised', 'Strong'].indexOf(prog[c[1]]) !== -1;
+    }).length;
+
+    document.getElementById('pbar').style.width = (done / CH.length) * 100 + '%';
+    document.getElementById('ptxt').firstChild.textContent = done + ' of ' + CH.length + ' chapters revised or strong';
+  }
+
+  draw();
+
+  var items = ['Syllabus checked', 'Chapter studied', 'Notes prepared', 'Basic questions solved', 'PYQs solved', 'Mistakes recorded', 'Chapter revised', 'Mock test attempted', 'Test analyzed'];
+  var ck = get('ck') || {};
+
+  document.getElementById('chk').innerHTML = items.map(function(t, i) {
+    var isChecked = ck[i] ? 'checked' : '';
+    return '<li><label><input type="checkbox" ' + isChecked + ' onchange="ck[' + i + ']=this.checked;put(\'ck\',ck)">' + t + '</label></li>';
+  }).join('');
+
+  var IDX = CH.map(function(c) {
+    return [c[1], '#notes', c[0]];
+  }).concat([
+    ['Roadmap', '#roadmap', 'Section'],
+    ['Daily routine', '#roadmap', 'Section'],
+    ['PYQs', '#pyq', 'Section'],
+    ['Mock tests', '#tests', 'Section'],
+    ['Error analysis', '#tests', 'Section'],
+    ['Revision', '#tests', 'Section'],
+    ['Formulas', '#formulas', 'Section'],
+    ['Resources', '#resources', 'Section'],
+    ['Checklist', '#chk', 'Section'],
+    ['FAQ', '#about', 'Section']
+  ]);
+
+  document.getElementById('q').addEventListener('input', function(e) {
+    var v = e.target.value.trim().toLowerCase();
+    var results = '';
+    if (v) {
+      var matches = IDX.filter(function(i) {
+        return i[0].toLowerCase().indexOf(v) !== -1;
+      });
+      if (matches.length > 0) {
+        results = matches.map(function(i) {
+          var isChapter = CH.some(function(c) { return c[1] == i[0]; });
+          var clickAction = isChapter ? 'setF(\'' + i[2] + '\')' : '';
+          return '<a class="card" href="' + i[1] + '" onclick="' + clickAction + '">' + i[0] + '<br><small>' + i[2] + '</small></a>';
+        }).join('');
+      } else {
+        results = '<small>No match.</small>';
+      }
+    }
+    document.getElementById('qr').innerHTML = results;
+  });
+</script>
+</body>
 </html>
